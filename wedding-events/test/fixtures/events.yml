@@ -7,6 +7,7 @@ one:
   time_slot: MyString
   no_of_guests: 1
   paid: false
+  client_telephone: MyString
   booking: 
 
 two:
@@ -16,4 +17,5 @@ two:
   time_slot: MyString
   no_of_guests: 1
   paid: false
+  client_telephone: MyString
   booking: 

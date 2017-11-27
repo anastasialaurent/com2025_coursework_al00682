@@ -11,6 +11,7 @@
       <th>Time slot</th>
       <th>No of guests</th>
       <th>Paid</th>
+      <th>Client telephone</th>
       <th>Booking</th>
       <th colspan="3"></th>
     </tr>
@@ -25,6 +26,7 @@
         <td><%= event.time_slot %></td>
         <td><%= event.no_of_guests %></td>
         <td><%= event.paid %></td>
+        <td><%= event.client_telephone %></td>
         <td><%= event.booking %></td>
         <td><%= link_to 'Show', event %></td>
         <td><%= link_to 'Edit', edit_event_path(event) %></td>
