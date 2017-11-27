@@ -5,6 +5,8 @@
 <table>
   <thead>
     <tr>
+      <th>Event</th>
+      <th>Room</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -12,6 +14,8 @@
   <tbody>
     <% @bookings.each do |booking| %>
       <tr>
+        <td><%= booking.event %></td>
+        <td><%= booking.room %></td>
         <td><%= link_to 'Show', booking %></td>
         <td><%= link_to 'Edit', edit_booking_path(booking) %></td>
         <td><%= link_to 'Destroy', booking, method: :delete, data: { confirm: 'Are you sure?' } %></td>

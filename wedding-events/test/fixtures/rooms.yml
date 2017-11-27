@@ -1,11 +1,20 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# a normal data piece that should save as expected
 one:
-  name: MyString
-  theme: MyString
-  img_url: MyString
+  name: Room1
+  theme: dark
+  img_url: url
 
+# a data piece that has a wrong theme value and should not be saved
 two:
-  name: MyString
-  theme: MyString
-  img_url: MyString
+  name: Room2
+  theme: wrong
+  img_url: url
+  
+# a data piece with a non-unique name that should not save
+three:
+  name: Room2
+  theme: light
+  img_url: url
+  

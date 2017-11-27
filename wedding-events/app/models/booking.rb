@@ -1,4 +1,4 @@
 class Booking < ActiveRecord::Base
-    belongs_to :event
-    has_many :rooms
+  belongs_to :event
+  belongs_to :room
 end

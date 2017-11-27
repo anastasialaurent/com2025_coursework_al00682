@@ -1,21 +1,45 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
+# a normal data piece that should save normally
 one:
-  name: MyString
-  description: MyText
+  name: Event1
+  description: Client wants roses in the rooms
   date: 2017-11-27
-  time_slot: MyString
+  time_slot: morning
   no_of_guests: 1
   paid: false
-  client_telephone: MyString
+  client_telephone: 077777777777
   booking: 
 
+# a data piece that has a wrong time slot value and should not be saved
 two:
-  name: MyString
-  description: MyText
+  name: Event2
+  description: N/A
   date: 2017-11-27
-  time_slot: MyString
+  time_slot: midday # incorrect value
   no_of_guests: 1
   paid: false
-  client_telephone: MyString
+  client_telephone: 077777777777
+  booking: 
+
+# a data piece with a missing time slot that should not be saved
+three:
+  name: Event3
+  description: N/A
+  date: 2017-11-27
+  time_slot: # missing
+  no_of_guests: 1
+  paid: false
+  client_telephone: 077777777777
+  booking: 
+
+# a data piece with a non-unique name that should not save
+four:
+  name: Event2 # non unique
+  description: N/A
+  date: 2017-11-27
+  time_slot: afternoon
+  no_of_guests: 1
+  paid: false
+  client_telephone: 077777777777
   booking: 

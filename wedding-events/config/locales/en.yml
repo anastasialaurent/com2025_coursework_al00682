@@ -21,3 +21,5 @@
 
 en:
   hello: "Hello world"
+  wrong_theme: "room theme %{value} is not included in the list"
+  wrong_time_slot: "time slot %{value} is not included in the list"
