@@ -11,11 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171124145519) do
+ActiveRecord::Schema.define(version: 20171127160144) do
+
+  create_table "bookings", force: :cascade do |t|
+    t.integer  "event_id"
+    t.integer  "room_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "bookings", ["event_id"], name: "index_bookings_on_event_id"
+  add_index "bookings", ["room_id"], name: "index_bookings_on_room_id"
 
   create_table "events", force: :cascade do |t|
-    t.string   "title"
+    t.string   "name"
+    t.text     "description"
     t.date     "date"
+    t.string   "time_slot"
+    t.integer  "no_of_guests"
+    t.boolean  "paid"
+    t.string   "client_telephone"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "rooms", force: :cascade do |t|
+    t.string   "name"
+    t.string   "theme"
+    t.string   "img_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
