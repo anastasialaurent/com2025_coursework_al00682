@@ -12,12 +12,32 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :date %><br>
     <%= f.date_select :date %>
+  </div>
+  <div class="field">
+    <%= f.label :time_slot %><br>
+    <%= f.text_field :time_slot %>
+  </div>
+  <div class="field">
+    <%= f.label :no_of_guests %><br>
+    <%= f.number_field :no_of_guests %>
+  </div>
+  <div class="field">
+    <%= f.label :paid %><br>
+    <%= f.check_box :paid %>
+  </div>
+  <div class="field">
+    <%= f.label :booking %><br>
+    <%= f.text_field :booking %>
   </div>
   <div class="actions">
     <%= f.submit %>

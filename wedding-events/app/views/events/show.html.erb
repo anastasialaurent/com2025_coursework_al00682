@@ -1,13 +1,38 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
-  <%= @event.title %>
+  <strong>Name:</strong>
+  <%= @event.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @event.description %>
 </p>
 
 <p>
   <strong>Date:</strong>
   <%= @event.date %>
+</p>
+
+<p>
+  <strong>Time slot:</strong>
+  <%= @event.time_slot %>
+</p>
+
+<p>
+  <strong>No of guests:</strong>
+  <%= @event.no_of_guests %>
+</p>
+
+<p>
+  <strong>Paid:</strong>
+  <%= @event.paid %>
+</p>
+
+<p>
+  <strong>Booking:</strong>
+  <%= @event.booking %>
 </p>
 
 <%= link_to 'Edit', edit_event_path(@event) %> |

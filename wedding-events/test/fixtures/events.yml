@@ -1,9 +1,19 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  title: MyString
-  date: 2017-11-24
+  name: MyString
+  description: MyText
+  date: 2017-11-27
+  time_slot: MyString
+  no_of_guests: 1
+  paid: false
+  booking: 
 
 two:
-  title: MyString
-  date: 2017-11-24
+  name: MyString
+  description: MyText
+  date: 2017-11-27
+  time_slot: MyString
+  no_of_guests: 1
+  paid: false
+  booking: 
